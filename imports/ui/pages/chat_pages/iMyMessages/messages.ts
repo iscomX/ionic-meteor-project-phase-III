@@ -12,6 +12,7 @@ import { menuMessagesComponent } from './menuMessages';
 import { ShowPictureComponent } from './show-picture';
 import template from './messages.html';
 
+//new branch
 @Component({
   template
 })
