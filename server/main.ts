@@ -11,47 +11,6 @@ Meteor.startup(() => {
   }
 
   if (Users.collection.find().count() > 0) { return; }
-  data();
+    //Accounts.createUserWithPhone({ phone: '+212666000000', profile: { name: 'Person 0' } });
 
   });
-
-//======================Fonction========================//
-function data(){
- //==============================User-A========================//
-  Accounts.createUserWithPhone({
-          phone: '+212666000001',
-          profile: {
-                    name: 'person A' /*pictureId: picture._id*/ }
-              });
- //==============================User-B========================//
-  Accounts.createUserWithPhone({
-    phone: '+212666000002',
-    profile: { name: 'person B' }
-  });
- //==============================User-C========================//
-  Accounts.createUserWithPhone({
-    phone: '+212666000003',
-    profile: { name: 'person C' }
-  });
- //==============================User-D========================//
-  Accounts.createUserWithPhone({
-    phone: '+212666000004',
-    profile: { name: 'person D' }
-  });
- //==============================User-E========================//
-  Accounts.createUserWithPhone({
-    phone: '+212666000005',
-    profile: { name: 'person E' }
-  });
- //==============================User-F========================//
-  Accounts.createUserWithPhone({
-    phone: '+212666000006',
-    profile: { name: 'person n' }
-  });
- //==============================User-E========================//
-  Accounts.createUserWithPhone({
-    phone: '+212666000007',
-    profile: { name: 'person f' }
-  });
-  
-}
