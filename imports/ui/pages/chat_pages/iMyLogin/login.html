@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar color="iMy_color">
+        <ion-title>Login</ion-title>
+
+        <ion-buttons end>
+            <button ion-button class="done-button" (click)="login()">Done</button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="login-page-content">
+    <div class="instructions">
+        <div>user-A +212666000001:7</div><br>
+    </div>
+    <div>
+        <ion-input class="text-input" [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="number"></ion-input>
+    </div>
+
+</ion-content>
+
+
+
+<!--==========================================================-->
+<ion-footer style="height:25px">
+    <ion-toolbar color="iMy_color" position="bottom"> </ion-toolbar>
+</ion-footer>
